@@ -29,20 +29,40 @@ const people = [
 // Array.prototype.filter()
 // 1. Filter the list of inventors for those who were born in the 1500's and return the filtered array
 export function myfilter() {
-
+	const filterarr = [];
+ for(let i = 0;i<inventors.length;i++){
+	 if(year<1500){
+		filterarr.push(inventors[i]);
+	 }
+ }
+	return filterarr;
 }
 
 // Array.prototype.map()
 // 2. Give us an array of the inventor first and last names (i.e. full name)
 // Ex: For the first inventor the full name will be 'Albert Einstein'
 export function map() {
-
-}
+ const names=[];
+	for(let i = 0;i<inventors.length;i++) {
+	  names.push(first +""+last);
+	}
+}r return names;
 
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest and return the sorted array
 export function sort() {
+	let max = inventors[i];
+	const dob=[];
+	for(let i = 0;i<inventors.length;i++) {
+	  if(year>max) {
+		  arr[i] = max;
+	  }
+    dob.push(max);
+	dob.sort(function(a, b){return b-a});;
+
+	}
+return dob;
 
 }
 
